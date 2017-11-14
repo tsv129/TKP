@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKP3", "TKP3\TKP3.csproj", "{A3C73E99-A8A0-4AB7-9920-DEB2FE98A66D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3C73E99-A8A0-4AB7-9920-DEB2FE98A66D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C73E99-A8A0-4AB7-9920-DEB2FE98A66D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C73E99-A8A0-4AB7-9920-DEB2FE98A66D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C73E99-A8A0-4AB7-9920-DEB2FE98A66D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {316C511C-35C5-4230-8E8C-D9C756B179C1}
+	EndGlobalSection
+EndGlobal
