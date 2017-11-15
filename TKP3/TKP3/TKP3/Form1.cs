@@ -43,7 +43,7 @@ namespace TKP3
             return x;
         }
 
-        public static void DrawWuLine(Graphics g, Color clr, int x0, int y0, int x1, int y1)
+        public static void AlgorithmWu(Graphics g, Color clr, int x0, int y0, int x1, int y1)
         {
             int dx = (x1 > x0) ? (x1 - x0) : (x0 - x1);
             int dy = (y1 > y0) ? (y1 - y0) : (y0 - y1);
@@ -124,7 +124,7 @@ namespace TKP3
         private void button2_Click(object sender, EventArgs e)
         {
             PointF[] points = new PointF[]{
-            new PointF(170,150), new PointF(230,150), new PointF(240,170), new PointF(160,170)
+            new PointF(170,150), new PointF(230,150), new PointF(245,180), new PointF(155,180)
             };
             Graphics g = Graphics.FromHwnd(pictureBox1.Handle);
             g.DrawRectangle(BlackPen, 0, 0, 399, 299);
@@ -134,14 +134,14 @@ namespace TKP3
             g.FillPolygon(TBlackBrush, points);
             g.FillRectangle(BlackBrush, 185, 125, 30, 30);
             g.DrawLine(BlackPen, 170, 150, 230, 150);
-            g.DrawLine(BlackPen, 170, 150, 160, 170);
+            g.DrawLine(BlackPen, 170, 150, 155, 180);
             //g.DrawLine(BlackPen, 230, 150, 240, 170);
-            g.DrawLine(BlackPen, 160, 170, 240, 170);
+            g.DrawLine(BlackPen, 155, 180, 245, 180);
             g.DrawRectangle(BlackPen, 130, 50, 140, 75);
             //g.FillEllipse(YellowBrush, 245, 60, 13, 13);
             for (int ib = 1; ib < 10; ib++)
             BresenhamCircle(g, Color.Yellow, 245, 65, ib);
-            DrawWuLine(g, Color.Black, 230, 150, 240, 170);
+            AlgorithmWu(g, Color.Black, 230, 150, 245, 180);
         }
 
         private void button1_Click(object sender, EventArgs e)
